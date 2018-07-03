@@ -1,0 +1,11 @@
+C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.Form1.resources
+C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.Properties.Resources.resources
+C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.csproj.GenerateResource.Cache
+C:\Programacion\C#\IPEC2\IPEC\IPEC\bin\Debug\IPEC.exe
+C:\Programacion\C#\IPEC2\IPEC\IPEC\bin\Debug\IPEC.pdb
+C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.exe
+C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.pdb
+C:\Programacion\C#\IPEC2\IPEC\IPEC\bin\Debug\IPEC.exe.config
+C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.SetDataView.resources
+C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.csprojAssemblyReference.cache
+C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.csproj.CoreCompileInputs.cache
