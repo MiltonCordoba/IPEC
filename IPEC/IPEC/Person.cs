@@ -22,8 +22,7 @@ namespace IPEC
         }
 
         public int PersonId { get => personId; }
-        public string FirstName { get => FirstName1; set => FirstName1 = value; }
-        public string FirstName1 { get => firstName; set => firstName = value; }
+        public string FirstName { get => this.firstName; set => this.firstName = value; }
         public string LastName { get => lastName; set => lastName = value; }
         public string Country { get => country; set => country = value; }
         public string City { get => city; set => city = value; }
@@ -38,6 +37,11 @@ namespace IPEC
         public bool Enabled { get => enabled; set => enabled = value; }
         public Image Picture { get => picture; set => picture = value; }
 
-        
+        public override string ToString()
+        {
+            return "'" + firstName + "', '" + lastName + "', " + dni + ", " + birthDate + ", '" + country + "', '" + city + "', '" + category + "', " + startDate;
+        }
+
+       
     }
 }

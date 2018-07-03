@@ -9,3 +9,14 @@ C:\Programacion\C#\IPEC2\IPEC\IPEC\bin\Debug\IPEC.exe.config
 C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.SetDataView.resources
 C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.csprojAssemblyReference.cache
 C:\Programacion\C#\IPEC2\IPEC\IPEC\obj\x86\Debug\IPEC.csproj.CoreCompileInputs.cache
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\bin\Debug\IPEC.exe.config
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\obj\x86\Debug\IPEC.exe
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\obj\x86\Debug\IPEC.pdb
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\bin\Debug\IPEC.exe
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\bin\Debug\IPEC.pdb
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\obj\x86\Debug\IPEC.csprojAssemblyReference.cache
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\obj\x86\Debug\IPEC.Form1.resources
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\obj\x86\Debug\IPEC.SetDataView.resources
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\obj\x86\Debug\IPEC.Properties.Resources.resources
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\obj\x86\Debug\IPEC.csproj.GenerateResource.cache
+C:\Users\Milton\Documents\IPEC\IPEC\IPEC\obj\x86\Debug\IPEC.csproj.CoreCompileInputs.cache
