@@ -28,53 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tb_contraseña = new System.Windows.Forms.TextBox();
-            this.btn_log = new System.Windows.Forms.Button();
-            this.cb_usuario = new System.Windows.Forms.ComboBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.btnLogIn = new System.Windows.Forms.Button();
+            this.cbUserName = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // tb_contraseña
+            // tbPassword
             // 
-            this.tb_contraseña.Location = new System.Drawing.Point(201, 121);
-            this.tb_contraseña.Name = "tb_contraseña";
-            this.tb_contraseña.Size = new System.Drawing.Size(100, 20);
-            this.tb_contraseña.TabIndex = 1;
+            this.tbPassword.Location = new System.Drawing.Point(201, 121);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(100, 20);
+            this.tbPassword.TabIndex = 1;
             // 
-            // btn_log
+            // btnLogIn
             // 
-            this.btn_log.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btn_log.Location = new System.Drawing.Point(156, 155);
-            this.btn_log.Name = "btn_log";
-            this.btn_log.Size = new System.Drawing.Size(75, 23);
-            this.btn_log.TabIndex = 2;
-            this.btn_log.Text = "Entrar";
-            this.btn_log.UseVisualStyleBackColor = false;
-            this.btn_log.Click += new System.EventHandler(this.btn_log_Click);
+            this.btnLogIn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnLogIn.Location = new System.Drawing.Point(156, 155);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(75, 23);
+            this.btnLogIn.TabIndex = 2;
+            this.btnLogIn.Text = "Entrar";
+            this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
-            // cb_usuario
+            // cbUserName
             // 
-            this.cb_usuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_usuario.FormattingEnabled = true;
-            this.cb_usuario.Items.AddRange(new object[] {
+            this.cbUserName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbUserName.FormattingEnabled = true;
+            this.cbUserName.Items.AddRange(new object[] {
             "Administrador",
             "Invitado"});
-            this.cb_usuario.Location = new System.Drawing.Point(201, 85);
-            this.cb_usuario.Name = "cb_usuario";
-            this.cb_usuario.Size = new System.Drawing.Size(100, 21);
-            this.cb_usuario.TabIndex = 3;
-            this.cb_usuario.SelectedIndexChanged += new System.EventHandler(this.cb_usuario_SelectedIndexChanged);
+            this.cbUserName.Location = new System.Drawing.Point(201, 85);
+            this.cbUserName.Name = "cbUserName";
+            this.cbUserName.Size = new System.Drawing.Size(100, 21);
+            this.cbUserName.TabIndex = 3;
+            this.cbUserName.SelectedIndexChanged += new System.EventHandler(this.cbUserName_SelectedIndexChanged);
             // 
             // Form1
             // 
-            this.AcceptButton = this.btn_log;
+            this.AcceptButton = this.btnLogIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IPEC.Properties.Resources.WhatsApp_Image_2017_09_07_at_19_39_57;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(399, 190);
-            this.Controls.Add(this.cb_usuario);
-            this.Controls.Add(this.btn_log);
-            this.Controls.Add(this.tb_contraseña);
+            this.Controls.Add(this.cbUserName);
+            this.Controls.Add(this.btnLogIn);
+            this.Controls.Add(this.tbPassword);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -86,9 +86,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox tb_contraseña;
-        private System.Windows.Forms.Button btn_log;
-        private System.Windows.Forms.ComboBox cb_usuario;
+        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.Button btnLogIn;
+        private System.Windows.Forms.ComboBox cbUserName;
     }
 }
 

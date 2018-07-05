@@ -28,222 +28,218 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tb_name = new System.Windows.Forms.TextBox();
-            this.tb_dni = new System.Windows.Forms.TextBox();
-            this.tb_email = new System.Windows.Forms.TextBox();
-            this.tb_phone = new System.Windows.Forms.TextBox();
-            this.dt_birthdate = new System.Windows.Forms.DateTimePicker();
-            this.dt_startdate = new System.Windows.Forms.DateTimePicker();
-            this.dt_modificacion = new System.Windows.Forms.DateTimePicker();
-            this.cb_category = new System.Windows.Forms.ComboBox();
-            this.cb_country = new System.Windows.Forms.ComboBox();
-            this.btn_cargar = new System.Windows.Forms.Button();
-            this.tb_notas = new System.Windows.Forms.TextBox();
-            this.btn_datos = new System.Windows.Forms.Button();
-            this.btn_salir = new System.Windows.Forms.Button();
-            this.pb_foto = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.tb_lastname = new System.Windows.Forms.TextBox();
-            this.tb_city = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
+            this.tbFirstName = new System.Windows.Forms.TextBox();
+            this.tbDni = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbPhone = new System.Windows.Forms.TextBox();
+            this.dtBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.dtStartDate = new System.Windows.Forms.DateTimePicker();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.cbCountry = new System.Windows.Forms.ComboBox();
+            this.btnLoadPerson = new System.Windows.Forms.Button();
+            this.tbNotes = new System.Windows.Forms.TextBox();
+            this.btnShowList = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.pbPhoto = new System.Windows.Forms.PictureBox();
+            this.btnLoadPhoto = new System.Windows.Forms.Button();
+            this.tbLastname = new System.Windows.Forms.TextBox();
+            this.tbCity = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).BeginInit();
             this.SuspendLayout();
             // 
-            // tb_name
+            // tbFirstName
             // 
-            this.tb_name.Location = new System.Drawing.Point(7, 87);
-            this.tb_name.Name = "tb_name";
-            this.tb_name.Size = new System.Drawing.Size(100, 20);
-            this.tb_name.TabIndex = 3;
-            this.tb_name.Text = "Nombre";
+            this.tbFirstName.Location = new System.Drawing.Point(7, 87);
+            this.tbFirstName.Name = "tbFirstName";
+            this.tbFirstName.Size = new System.Drawing.Size(100, 20);
+            this.tbFirstName.TabIndex = 3;
+            this.tbFirstName.Text = "Nombre";
             // 
-            // tb_dni
+            // tbDni
             // 
-            this.tb_dni.Location = new System.Drawing.Point(7, 113);
-            this.tb_dni.Name = "tb_dni";
-            this.tb_dni.Size = new System.Drawing.Size(100, 20);
-            this.tb_dni.TabIndex = 3;
-            this.tb_dni.Text = "123456";
+            this.tbDni.Location = new System.Drawing.Point(7, 113);
+            this.tbDni.Name = "tbDni";
+            this.tbDni.Size = new System.Drawing.Size(100, 20);
+            this.tbDni.TabIndex = 3;
+            this.tbDni.Text = "123456";
             // 
-            // tb_email
+            // tbEmail
             // 
-            this.tb_email.Location = new System.Drawing.Point(7, 166);
-            this.tb_email.Name = "tb_email";
-            this.tb_email.Size = new System.Drawing.Size(100, 20);
-            this.tb_email.TabIndex = 3;
-            this.tb_email.Text = "Email";
+            this.tbEmail.Location = new System.Drawing.Point(7, 166);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(100, 20);
+            this.tbEmail.TabIndex = 3;
+            this.tbEmail.Text = "Email";
             // 
-            // tb_phone
+            // tbPhone
             // 
-            this.tb_phone.Location = new System.Drawing.Point(113, 166);
-            this.tb_phone.Name = "tb_phone";
-            this.tb_phone.Size = new System.Drawing.Size(100, 20);
-            this.tb_phone.TabIndex = 3;
-            this.tb_phone.Text = "Telefono";
+            this.tbPhone.Location = new System.Drawing.Point(113, 166);
+            this.tbPhone.Name = "tbPhone";
+            this.tbPhone.Size = new System.Drawing.Size(100, 20);
+            this.tbPhone.TabIndex = 3;
+            this.tbPhone.Text = "Telefono";
             // 
-            // dt_birthdate
+            // dtBirthDate
             // 
-            this.dt_birthdate.Location = new System.Drawing.Point(113, 113);
-            this.dt_birthdate.Name = "dt_birthdate";
-            this.dt_birthdate.Size = new System.Drawing.Size(100, 20);
-            this.dt_birthdate.TabIndex = 4;
+            this.dtBirthDate.Location = new System.Drawing.Point(113, 113);
+            this.dtBirthDate.Name = "dtBirthDate";
+            this.dtBirthDate.Size = new System.Drawing.Size(100, 20);
+            this.dtBirthDate.TabIndex = 4;
             // 
-            // dt_startdate
+            // dtStartDate
             // 
-            this.dt_startdate.Location = new System.Drawing.Point(7, 220);
-            this.dt_startdate.Name = "dt_startdate";
-            this.dt_startdate.Size = new System.Drawing.Size(100, 20);
-            this.dt_startdate.TabIndex = 5;
+            this.dtStartDate.CustomFormat = "dd-MM-yyyy";
+            this.dtStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtStartDate.Location = new System.Drawing.Point(113, 193);
+            this.dtStartDate.Name = "dtStartDate";
+            this.dtStartDate.Size = new System.Drawing.Size(100, 20);
+            this.dtStartDate.TabIndex = 5;
+            this.dtStartDate.Value = new System.DateTime(2018, 7, 5, 0, 0, 0, 0);
             // 
-            // dt_modificacion
+            // cbCategory
             // 
-            this.dt_modificacion.Location = new System.Drawing.Point(7, 246);
-            this.dt_modificacion.Name = "dt_modificacion";
-            this.dt_modificacion.Size = new System.Drawing.Size(100, 20);
-            this.dt_modificacion.TabIndex = 6;
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(7, 192);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(100, 21);
+            this.cbCategory.TabIndex = 7;
+            this.cbCategory.Text = "Categoria";
             // 
-            // cb_category
+            // cbCountry
             // 
-            this.cb_category.FormattingEnabled = true;
-            this.cb_category.Location = new System.Drawing.Point(7, 192);
-            this.cb_category.Name = "cb_category";
-            this.cb_category.Size = new System.Drawing.Size(100, 21);
-            this.cb_category.TabIndex = 7;
-            this.cb_category.Text = "Categoria";
+            this.cbCountry.FormattingEnabled = true;
+            this.cbCountry.Location = new System.Drawing.Point(7, 139);
+            this.cbCountry.Name = "cbCountry";
+            this.cbCountry.Size = new System.Drawing.Size(100, 21);
+            this.cbCountry.TabIndex = 8;
+            this.cbCountry.Text = "Pais";
             // 
-            // cb_country
+            // btnLoadPerson
             // 
-            this.cb_country.FormattingEnabled = true;
-            this.cb_country.Location = new System.Drawing.Point(7, 139);
-            this.cb_country.Name = "cb_country";
-            this.cb_country.Size = new System.Drawing.Size(100, 21);
-            this.cb_country.TabIndex = 8;
-            this.cb_country.Text = "Pais";
+            this.btnLoadPerson.Location = new System.Drawing.Point(269, 302);
+            this.btnLoadPerson.Name = "btnLoadPerson";
+            this.btnLoadPerson.Size = new System.Drawing.Size(75, 23);
+            this.btnLoadPerson.TabIndex = 9;
+            this.btnLoadPerson.Text = "Cargar";
+            this.btnLoadPerson.UseVisualStyleBackColor = true;
+            this.btnLoadPerson.Click += new System.EventHandler(this.btnLoadPerson_Click);
             // 
-            // btn_cargar
+            // tbNotes
             // 
-            this.btn_cargar.Location = new System.Drawing.Point(269, 343);
-            this.btn_cargar.Name = "btn_cargar";
-            this.btn_cargar.Size = new System.Drawing.Size(75, 23);
-            this.btn_cargar.TabIndex = 9;
-            this.btn_cargar.Text = "Cargar";
-            this.btn_cargar.UseVisualStyleBackColor = true;
-            this.btn_cargar.Click += new System.EventHandler(this.btn_cargar_Click);
+            this.tbNotes.Location = new System.Drawing.Point(7, 219);
+            this.tbNotes.Multiline = true;
+            this.tbNotes.Name = "tbNotes";
+            this.tbNotes.Size = new System.Drawing.Size(206, 106);
+            this.tbNotes.TabIndex = 10;
+            this.tbNotes.Text = "Notas";
             // 
-            // tb_notas
+            // btnShowList
             // 
-            this.tb_notas.Location = new System.Drawing.Point(7, 272);
-            this.tb_notas.Multiline = true;
-            this.tb_notas.Name = "tb_notas";
-            this.tb_notas.Size = new System.Drawing.Size(206, 94);
-            this.tb_notas.TabIndex = 10;
-            this.tb_notas.Text = "Notas";
+            this.btnShowList.Location = new System.Drawing.Point(369, 302);
+            this.btnShowList.Name = "btnShowList";
+            this.btnShowList.Size = new System.Drawing.Size(75, 23);
+            this.btnShowList.TabIndex = 11;
+            this.btnShowList.Text = "Datos";
+            this.btnShowList.UseVisualStyleBackColor = true;
+            this.btnShowList.Click += new System.EventHandler(this.btnShowList_Click);
             // 
-            // btn_datos
+            // btnExit
             // 
-            this.btn_datos.Location = new System.Drawing.Point(369, 343);
-            this.btn_datos.Name = "btn_datos";
-            this.btn_datos.Size = new System.Drawing.Size(75, 23);
-            this.btn_datos.TabIndex = 11;
-            this.btn_datos.Text = "Datos";
-            this.btn_datos.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(473, 302);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 12;
+            this.btnExit.Text = "Salir";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btn_salir
+            // pbPhoto
             // 
-            this.btn_salir.Location = new System.Drawing.Point(473, 343);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(75, 23);
-            this.btn_salir.TabIndex = 12;
-            this.btn_salir.Text = "Salir";
-            this.btn_salir.UseVisualStyleBackColor = true;
-            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            this.pbPhoto.Location = new System.Drawing.Point(352, 68);
+            this.pbPhoto.Name = "pbPhoto";
+            this.pbPhoto.Size = new System.Drawing.Size(150, 124);
+            this.pbPhoto.TabIndex = 13;
+            this.pbPhoto.TabStop = false;
+            this.pbPhoto.Click += new System.EventHandler(this.pbPhoto_Click);
             // 
-            // pb_foto
+            // btnLoadPhoto
             // 
-            this.pb_foto.Location = new System.Drawing.Point(352, 68);
-            this.pb_foto.Name = "pb_foto";
-            this.pb_foto.Size = new System.Drawing.Size(150, 124);
-            this.pb_foto.TabIndex = 13;
-            this.pb_foto.TabStop = false;
+            this.btnLoadPhoto.Location = new System.Drawing.Point(393, 198);
+            this.btnLoadPhoto.Name = "btnLoadPhoto";
+            this.btnLoadPhoto.Size = new System.Drawing.Size(75, 23);
+            this.btnLoadPhoto.TabIndex = 14;
+            this.btnLoadPhoto.Text = "Cambiar";
+            this.btnLoadPhoto.UseVisualStyleBackColor = true;
+            this.btnLoadPhoto.Click += new System.EventHandler(this.btnLoadPhoto_Click);
             // 
-            // button4
+            // tbLastname
             // 
-            this.button4.Location = new System.Drawing.Point(393, 198);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Cambiar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.tbLastname.Location = new System.Drawing.Point(113, 87);
+            this.tbLastname.Name = "tbLastname";
+            this.tbLastname.Size = new System.Drawing.Size(100, 20);
+            this.tbLastname.TabIndex = 15;
+            this.tbLastname.Text = "Apellidos";
             // 
-            // tb_lastname
+            // tbCity
             // 
-            this.tb_lastname.Location = new System.Drawing.Point(113, 87);
-            this.tb_lastname.Name = "tb_lastname";
-            this.tb_lastname.Size = new System.Drawing.Size(100, 20);
-            this.tb_lastname.TabIndex = 15;
-            this.tb_lastname.Text = "Apellidos";
-            // 
-            // tb_city
-            // 
-            this.tb_city.Location = new System.Drawing.Point(113, 139);
-            this.tb_city.Name = "tb_city";
-            this.tb_city.Size = new System.Drawing.Size(100, 20);
-            this.tb_city.TabIndex = 17;
-            this.tb_city.Text = "Ciudad";
+            this.tbCity.Location = new System.Drawing.Point(113, 139);
+            this.tbCity.Name = "tbCity";
+            this.tbCity.Size = new System.Drawing.Size(100, 20);
+            this.tbCity.TabIndex = 17;
+            this.tbCity.Text = "Ciudad";
             // 
             // SetDataView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IPEC.Properties.Resources.alta_socio;
-            this.ClientSize = new System.Drawing.Size(560, 378);
-            this.Controls.Add(this.tb_city);
-            this.Controls.Add(this.tb_lastname);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.pb_foto);
-            this.Controls.Add(this.btn_salir);
-            this.Controls.Add(this.btn_datos);
-            this.Controls.Add(this.tb_notas);
-            this.Controls.Add(this.btn_cargar);
-            this.Controls.Add(this.cb_country);
-            this.Controls.Add(this.cb_category);
-            this.Controls.Add(this.dt_modificacion);
-            this.Controls.Add(this.dt_startdate);
-            this.Controls.Add(this.dt_birthdate);
-            this.Controls.Add(this.tb_phone);
-            this.Controls.Add(this.tb_email);
-            this.Controls.Add(this.tb_dni);
-            this.Controls.Add(this.tb_name);
+            this.ClientSize = new System.Drawing.Size(560, 337);
+            this.Controls.Add(this.tbCity);
+            this.Controls.Add(this.tbLastname);
+            this.Controls.Add(this.btnLoadPhoto);
+            this.Controls.Add(this.pbPhoto);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnShowList);
+            this.Controls.Add(this.tbNotes);
+            this.Controls.Add(this.btnLoadPerson);
+            this.Controls.Add(this.cbCountry);
+            this.Controls.Add(this.cbCategory);
+            this.Controls.Add(this.dtStartDate);
+            this.Controls.Add(this.dtBirthDate);
+            this.Controls.Add(this.tbPhone);
+            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbDni);
+            this.Controls.Add(this.tbFirstName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(576, 417);
-            this.MinimumSize = new System.Drawing.Size(576, 417);
+            this.MaximumSize = new System.Drawing.Size(576, 376);
+            this.MinimumSize = new System.Drawing.Size(576, 376);
             this.Name = "SetDataView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IPEC";
             this.Load += new System.EventHandler(this.SetDataView_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox tb_name;
-        private System.Windows.Forms.TextBox tb_dni;
-        private System.Windows.Forms.TextBox tb_email;
-        private System.Windows.Forms.TextBox tb_phone;
-        private System.Windows.Forms.DateTimePicker dt_birthdate;
-        private System.Windows.Forms.DateTimePicker dt_startdate;
-        private System.Windows.Forms.DateTimePicker dt_modificacion;
-        private System.Windows.Forms.ComboBox cb_category;
-        private System.Windows.Forms.ComboBox cb_country;
-        private System.Windows.Forms.Button btn_cargar;
-        private System.Windows.Forms.TextBox tb_notas;
-        private System.Windows.Forms.Button btn_datos;
-        private System.Windows.Forms.Button btn_salir;
-        private System.Windows.Forms.PictureBox pb_foto;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox tb_lastname;
-        private System.Windows.Forms.TextBox tb_city;
+        private System.Windows.Forms.TextBox tbFirstName;
+        private System.Windows.Forms.TextBox tbDni;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbPhone;
+        private System.Windows.Forms.DateTimePicker dtBirthDate;
+        private System.Windows.Forms.DateTimePicker dtStartDate;
+        private System.Windows.Forms.ComboBox cbCategory;
+        private System.Windows.Forms.ComboBox cbCountry;
+        private System.Windows.Forms.Button btnLoadPerson;
+        private System.Windows.Forms.TextBox tbNotes;
+        private System.Windows.Forms.Button btnShowList;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox pbPhoto;
+        private System.Windows.Forms.Button btnLoadPhoto;
+        private System.Windows.Forms.TextBox tbLastname;
+        private System.Windows.Forms.TextBox tbCity;
     }
 }

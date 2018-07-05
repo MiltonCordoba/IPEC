@@ -12,7 +12,7 @@ namespace IPEC
         private int personId;
         private String firstName, lastName, country, city, email, phone, category, notes;
         private int dni;
-        private DateTime birthDate, startDate, modifyDate;
+        private String birthDate, startDate, modifyDate;
         private Boolean enabled;
         private Image picture;
 
@@ -31,17 +31,10 @@ namespace IPEC
         public string Category { get => category; set => category = value; }
         public string Notes { get => notes; set => notes = value; }
         public int Dni { get => dni; set => dni = value; }
-        public DateTime BirthDate { get => birthDate; set => birthDate = value; }
-        public DateTime StartDate { get => startDate; set => startDate = value; }
-        public DateTime ModifyDate { get => modifyDate; set => modifyDate = value; }
+        public String BirthDate { get => birthDate; set => birthDate = value; }
+        public String StartDate { get => startDate; set => startDate = value; }
+        public String ModifyDate { get => modifyDate; set => modifyDate = value; }
         public bool Enabled { get => enabled; set => enabled = value; }
         public Image Picture { get => picture; set => picture = value; }
-
-        public override string ToString()
-        {
-            return "'" + firstName + "', '" + lastName + "', " + dni + ", " + birthDate + ", '" + country + "', '" + city + "', '" + category + "', " + startDate;
-        }
-
-       
     }
 }

@@ -18,14 +18,14 @@ namespace IPEC
         Connection con;
         private void Form1_Load(object sender, EventArgs e)
         {
-            cb_usuario.SelectedIndex = 0;
+            cbUserName.SelectedIndex = 0;
         }
 
-        private void btn_log_Click(object sender, EventArgs e)
+        private void btnLogIn_Click(object sender, EventArgs e)
         {
-            if (cb_usuario.Text.Equals("Administrador"))
+            if (cbUserName.Text.Equals("Administrador"))
             {
-                if (tb_contraseña.Text.Equals("1234"))
+                if (tbPassword.Text.Equals("1234"))
                 {
                     con = Connection.GetInstance;
                     con.Usuario = true;
@@ -43,24 +43,20 @@ namespace IPEC
                 SetDataView screenView = new SetDataView();
                 screenView.Show();
             }
-
-
         }
 
-        private void cb_usuario_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbUserName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cb_usuario.SelectedIndex == 1)
+            if (cbUserName.SelectedIndex == 1)
             {
-                tb_contraseña.Enabled = false;
-                tb_contraseña.BackColor = Color.Gray;
+                tbPassword.Enabled = false;
+                tbPassword.BackColor = Color.Gray;
             }
             else
             {
-                tb_contraseña.Enabled = true;
-                tb_contraseña.BackColor = Color.White;
+                tbPassword.Enabled = true;
+                tbPassword.BackColor = Color.White;
             }
         }
-
-
     }
 }

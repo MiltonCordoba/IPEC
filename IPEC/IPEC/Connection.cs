@@ -15,71 +15,64 @@ namespace IPEC
         private Connection() {
             //this.connection = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Programacion\\C#\\IPEC2\\IPEC\\IPEC\\basessssss.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
             this.connection = new SqlConnection("Server=(local)\\SQLEXPRESS; integrated security=yes");
-            //this.connection.Open();
         }
+
+        public static Connection GetInstance{ get { if (instance == null){ instance = new Connection(); } return instance; } }
+
         public Boolean Usuario { get { return usuario; } set { usuario = value; } }
-        public static Connection GetInstance
-        {
-          get
-          {
-             if (instance == null)
-             {
-                 instance = new Connection();
-             }
-             return instance;
-          }
-        }
 
         public SqlConnection sqlConnection { get { return this.connection; } }
 
         public void NewDB()
         {
-            //ver si la db ya existe y preguntar si sobreescribrla o no
             this.connection.Open();
             String str = "if db_id('ipec_database') is null CREATE DATABASE ipec_database;";
             SqlCommand myCommand = new SqlCommand(str, this.connection);
             myCommand.ExecuteNonQuery();
-            
-            //INSERTs
-            //if (connection.State == ConnectionState.Open)
-            //{
             this.connection.Close();
-            //}
         }
 
-        public void newTablePerson()
+        public void newTablePersons()
         {
             this.connection.Open();
             String str = "USE ipec_database; " +
                 "CREATE TABLE Persons(" +
-                "PersonID int IDENTITY(1,1) PRIMARY KEY, " +
-                "FirstName varchar(255) NOT NULL, " +
-                "LastName varchar(255) NOT NULL, " +
-                "dni int NOT NULL, " +
-                "date_birth date NOT NULL, " +
+                "personID int IDENTITY(1,1) PRIMARY KEY, " +
+                "firstName varchar(255) NOT NULL, " +
+                "lastName varchar(255) NOT NULL, " +
+                "dni varchar(255) NOT NULL, " +
+                "birth_date varchar(255) NOT NULL, " +
                 "country varchar(255) NOT NULL, " +
                 "city varchar(255) NOT NULL, " +
                 "email varchar(255), " +
                 "phone varchar(255), " +
                 "category varchar(255) NOT NULL, " +
-                "start_date date NOT NULL, " +
-                "modify_date date, " +
+                "start_date varchar(255) NOT NULL, " +
+                "modify_date varchar(255), " +
                 "notes varchar(255), " +
                 "picture image, " +
-                "enabled bit, " +
+                "enabled bit" +
                 ");";
             SqlCommand myCommand = new SqlCommand(str, this.connection);
             myCommand.ExecuteNonQuery();
             this.connection.Close();
         }
 
+        public void DeleteTable(String table)
+        {
+            this.connection.Open();
+            String str = "USE ipec_database; " +
+                "DROP TABLE Persons";
+            SqlCommand myCommand = new SqlCommand(str, this.connection);
+            myCommand.ExecuteNonQuery();
+            this.connection.Close();
+        }
         public void DeleteDB()
         {
             String str = "DROP DATABASE ipec_database";
             SqlCommand myCommand = new SqlCommand(str, connection);
             connection.Open();
             myCommand.ExecuteNonQuery();
-
             connection.Close();
         }
 
